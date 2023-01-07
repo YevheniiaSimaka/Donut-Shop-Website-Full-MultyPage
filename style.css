@@ -1,0 +1,1538 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Libre+Baskerville&family=Raleway:wght@500&family=Sansita:wght@700&family=Sorts+Mill+Goudy&display=swap');
+/*
+font-family: 'Sansita', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*   Colors   */
+
+:root {
+    --primary-color: #6c4d3a;
+    --secondary-black: #0d081a;
+    --secondary-gray: #48464b;
+    --body-color: #ffffff;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    background-color: var(--body-color);
+}
+
+
+/*   Links */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*   Navigation   */
+/*   Navigation   */
+/*   Navigation   */
+
+
+/*   First Page Section   */
+
+#first {
+    min-height: 90vh;
+    width: 100%;
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#first .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*   Centering and adding Maximum width*/
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+    overflow: visible;
+}
+
+#first .container {
+    overflow: hidden;
+}
+
+
+/*   Making Right Part Bigger then Left part   */
+
+#first .container .left {
+    flex: 6;
+    padding-top: 0;
+    padding-left: 2rem;
+}
+
+
+#first .container .right {
+    flex: 8;
+}
+
+/*   Subheading in Left Part   */
+
+#first .container .left .subheading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+
+/*   Heading   */
+
+#first .container .left .heading {
+    font-size: 5.5rem;
+    color: black;
+    font-weight: 900;
+    font-family: 'Sansita', sans-serif;
+    margin-bottom: 1rem;
+}
+
+/*   Paragraph styling   */
+
+p {
+    font-size: 1.25rem;
+    color: var(--secondary-black);
+}
+
+/*   Description   */
+
+#first .container .left .description {
+    font-size: 1.2rem;
+    max-width: 480px;
+    color: var(--secondary-black);
+}
+
+/*   Left Part Buttons   */
+
+#first .left .buttons {
+    font-family: 'Sansita', sans-serif;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.buttons {
+    font-family: 'Sansita', sans-serif;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+/*   Left Part icon Button*/
+
+#first .left .buttons svg {
+    width: 50px;
+    color: var(--primary-color);
+    border-radius: 50%;
+    transition: 1s ease;
+}
+
+#first .left .buttons svg:hover {
+    background-color: var(--primary-color);
+    color: whitesmoke;
+}
+
+/*   Button 1   */
+
+.buttons .primary {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    font-size: 1.25rem;
+    padding: 0.6em 0.8em;
+    border-radius: 50px;
+    transition: 1s ease;
+    border: 3px solid var(--primary-color);
+}
+
+.buttons .primary:hover {
+    background-color: var(--body-color);
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+}
+
+.buttons .second {
+    font-family: 'Sansita', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    display: inline-block;
+    color: var(--primary-color);
+    background-color: var(--body-color);
+    border: 3px solid var(--primary-color);
+    font-size: 1.25rem;
+    padding: 0.6em 0.8em;
+    border-radius: 50px;
+    transition: 1s ease;
+}
+
+.buttons .second:hover {
+    background-color: var(--primary-color);
+    color: var(--body-color);
+    border: 3px solid var(--primary-color);
+}
+
+
+/*     Right Part     */
+
+
+#first .right {
+    text-align: right;
+    position: relative;
+}
+
+/*   Image   */
+
+#first .right .wrap {
+    padding: 1rem;
+    border: 3px solid var(--primary-color);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 4rem;
+}
+
+#first .right img {
+    width: 100%;
+    max-width: 450px;
+    height: 80vh;
+    object-fit: cover;
+}
+
+/*   2nd Page   */
+/*   2nd Page   */
+/*   2nd Page   */
+
+#page2 {
+    padding: 10rem 0 10rem 0;
+}
+
+#page2 .all-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*   Boxes   */
+
+#page2 .all-items .item {
+    margin: 0 1rem;
+    border-radius: 12px;
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    transition: 0.75s ease background-color;
+    flex: 1;
+}
+
+/*   Boxes background colors   */
+
+#page2 .all-items .item:nth-child(1):hover {
+    background-color: rgba(106, 79, 64, 0.8);
+    color: white;
+}
+
+#page2 .all-items .item:nth-child(2):hover {
+    background-color: rgba(106, 79, 64, 0.8);
+    color: white;
+}
+
+#page2 .all-items .item:nth-child(3):hover {
+    background-color: rgba(106, 79, 64, 0.8);
+    color: white;
+}
+
+#page2 .item:hover .item-description {
+    color: rgb(230, 230, 230);
+}
+
+/*   Top Icon in the Box*/
+
+#page2 .all-items .item .icon {
+    width: 40px;
+    height: 40px;
+    padding: 0.8rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/*   Item Heading   */
+
+#page2 .all-items .item-heading {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Sansita', sans-serif;
+    margin-bottom: 1rem;
+}
+
+/*   Item Description   */
+
+#page2 .item-description {
+    color: var(--secondary-gray);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+}
+
+/*   Background Color of Icons   */
+
+#page2 .all-items .item:nth-child(1) .icon {
+    background-color: rgb(109, 70, 64);
+    color: white;
+}
+
+#page2 .all-items .item:nth-child(2) .icon {
+    background-color: rgba(101, 70, 64);
+    color: white;
+}
+
+#page2 .all-items .item:nth-child(3) .icon {
+    background-color: rgba(101, 70, 64);
+    color: white;
+}
+
+/*   Headings for Pages!!!!!!!!!!!!!!!!!!!!!!   */
+/*   Headings for Pages!!!!!!!!!!!!!!!!!!!!!!   */
+
+#page2 .section-heading {
+    margin-bottom: 6 rem;
+}
+
+#page3 .section-heading {
+    margin-bottom: 2rem;
+}
+
+.section-heading {
+    font-size: clamp(2rem, 10vw, 4rem);
+    font-family: 'Sansita', sans-serif;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 8rem;
+}
+
+.section-heading::before {
+    font-family: 'Sansita', sans-serif;
+    letter-spacing: 0.3rem;
+    content: attr(data-outline);
+    position: absolute;
+    left: 1%;
+    top: -20%;
+    width: 100%;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 4px #5c483c83;
+    z-index: -1;
+}
+
+
+/*   3rd Page   */
+/*   3rd Page   */
+/*   3rd Page   */
+
+#page3 {
+    padding: 10rem 0 10rem 0;
+    overflow-x: hidden;
+}
+
+#page3 .container {
+    padding-bottom: 7rem;
+}
+
+#page3 .all-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#page3 .all-items .item {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+
+#page3 .all-items .item:nth-child(1),
+#page3 .all-items .item:nth-child(3) {
+    flex: 3;
+    transform: scale(0.8);
+}
+
+#page3 .all-items .item:nth-child(2) {
+    flex: 4;
+}
+
+#page3 .all-items .item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 45px;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(64, 58, 58, 0.3);
+    background-color: #d2cac210;
+}
+
+
+#page3 .all-items .item:nth-child(2)::after {
+    transform: skew(350deg, 354deg);
+    border-radius: 26px 67px 35px 67px;
+    height: 100%;
+}
+
+#page3 .all-items .item:nth-child(1) .image,
+#page3 .all-items .item:nth-child(3) .image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+}
+
+#page3 .all-items .item:nth-child(2) .image {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+}
+
+#page3 .all-items .item:nth-child(1)::after,
+#page3 .all-items .item:nth-child(3)::after {
+    transform: skew(2deg, 9deg);
+    height: 95%;
+    border-radius: 52px 30px 59px 60px;
+}
+
+#page3 .page3-heading {
+    font-size: 2.5rem;
+    font-family: 'Sansita', sans-serif;
+    margin-bottom: 0.25rem;
+}
+
+#page3 .page3-subheading {
+    font-size: 1.25rem;
+    color: var(--secondary-gray);
+}
+
+#page3 .icon {
+    max-width: 30px;
+    margin: 0rem auto;
+    color: var(--primary-color);
+}
+
+#page3 .page3-description {
+    color: var(--secondary-gray);
+}
+
+/*   Page 4   */
+/*   Page 4   */
+/*   Page 4   */
+
+#page4 {
+    padding: 5rem 0 15rem 0;
+}
+
+#page4 .section-heading {
+    margin-bottom: 5rem;
+}
+
+#page4 .container .all-items {
+    display: flex;
+}
+
+#page4 .container .all-items .item {
+    padding: 20px;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+#page4 .container .all-items .item:nth-child(1) {
+    flex: 1;
+}
+
+#page4 .container .all-items .item:nth-child(2) {
+    flex: 1;
+}
+
+#page4 .container .all-items .item:nth-child(3) {
+    flex: 1;
+}
+
+#page4 .container .all-items .item .page4-heading {
+    font-size: 4rem;
+    color: white;
+}
+
+#page4 .container .all-items .item .page4-subheading {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: rgb(222, 222, 222);
+}
+
+#page4 .container .all-items .item .page4-description {
+    font-size: 1.25rem;
+    color: rgb(204, 204, 204);
+}
+
+#page4 .container .all-items .item:nth-child(1) {
+    background-color: #816858;
+}
+
+#page4 .container .all-items .item:nth-child(2) {
+    background-color: #816858;
+}
+
+#page4 .container .all-items .item:nth-child(3) {
+    background-color: #816858;
+}
+
+/*   Page 5   */
+/*   Page 5   */
+/*   Page 5   */
+
+#page5 {
+    padding: 0rem 0 4rem 0;
+}
+
+#page5 .container .all-items {
+    display: flex;
+    gap: 2rem;
+}
+
+/*   Left Card with Image and Info   */
+
+#page5 .container .left {
+    text-align: center;
+    justify-content: center;
+    flex: 2.75;
+    border-radius: 20px;
+    padding: 2rem 0;
+    box-shadow: 0 0 20px rgb(181, 177, 174);
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease;
+    padding-top: 0.75rem;
+}
+
+/*   Description   */
+
+#page5 .container .right {
+    flex: 6;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/*   Image on Card   */
+
+#page5 .card-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 1s ease;
+}
+
+#page5 .wrap {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    transition: 1s ease;
+    overflow: hidden;
+    align-self: center;
+    margin: auto;
+    padding: 1rem;
+    margin-top: 0;
+}
+
+
+/*   Description on card on the left   */
+
+#page5 .card-description {
+    font-size: 1.25rem;
+    color: var(--secondary-gray);
+}
+
+#page5 .icon {
+    width: 30px;
+    height: 20px;
+    object-fit: cover;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    position: relative;
+}
+
+#page5 .right {
+    position: relative;
+    margin: auto 0;
+}
+
+#page5 .description-subheading {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+#page5 .description-heading {
+    font-size: 3rem;
+    margin: 0rem 0 1rem 0;
+    font-family: 'Sansita', sans-serif;
+}
+
+#page5 .section-heading {
+    margin-bottom: 5rem;
+}
+
+/*     PAGE 6     */
+/*     PAGE 6     */
+/*     PAGE 6     */
+
+#page6 {
+    padding: 5rem 0;
+    padding-top: 10rem;
+}
+
+#page6 .all-items .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+
+#page6 .all-items .item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+#page6 .item .left {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 0;
+    padding: 1rem;
+    border: 3px solid var(--primary-color);
+}
+
+#page6 .item .right {
+    flex: 1;
+    margin-left: -100px;
+    background-color: var(--body-color);
+    padding: 5rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #00000028;
+}
+
+#page6 .item:nth-child(even) .right {
+    margin-left: 0;
+    z-index: 2;
+}
+
+#page6 .item:nth-child(even) .left {
+    margin-left: -100px;
+    z-index: 1;
+}
+
+#page6 .all-items .item .description {
+    font-size: 1.5rem;
+}
+
+#page6 .all-items .item .title {
+    font-size: 1.75rem;
+    margin: 0.25rem 0;
+}
+
+#page6 .all-items .item .subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+#page6 .all-items .item .description {
+    font-size: 1rem;
+}
+
+#page6 .all-items .item .buttons .primary,
+#page6 .all-items .item .buttons .second {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+#page6 .item .left .img {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #4705fc33;
+    position: relative;
+    z-index: -1;
+    transition: 0.7s ease;
+    object-fit: cover;
+}
+
+#page6 .item .left .img img {
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+#page6 .item .left:hover .img {
+    overflow: hidden;
+    transform: scale(1.15);
+    z-index: -1;
+}
+
+
+/*   Footer   */
+/*   Footer   */
+/*   Footer   */
+/*   Footer   */
+
+#last {
+    background-color: #69574b;
+    color: whitesmoke;
+    padding: 10rem 0 5rem 0;
+    width: 100%;
+}
+
+#last .column1 {
+    flex: 3;
+}
+
+#last .column1,
+#last .column2,
+#last .column3,
+#last .column4 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+#last .column2,
+#last .column3 {
+    flex: 2;
+}
+
+#last .column4 {
+    flex: 1;
+}
+
+#last footer .column1 .logo img {
+    max-width: 100px;
+    border-radius: 10%;
+    margin-bottom: 2rem;
+}
+
+#last footer .column1 p {
+    color: whitesmoke;
+}
+
+#last footer .column-heading {
+    font-family: 'Sansita', sans-serif;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    line-height: 1.75rem;
+}
+
+#last footer ul {
+    list-style: none;
+}
+
+#last footer ul li {
+    border-radius: 10px;
+}
+
+#last footer ul li a {
+    display: inline-block;
+    width: 100%;
+    color: whitesmoke;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+#last footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+#last .container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 0;
+    margin-top: -100px;
+    margin-bottom: -20px;
+    width: 100%;
+}
+
+#last footer ul li:hover a {
+    color: var(--primary-color);
+    background-color: whitesmoke;
+}
+
+/*   Copyright   */
+/*   Copyright   */
+/*   Copyright   */
+/*   Copyright   */
+/*   Copyright   */
+
+#Copyright {
+    width: 100%;
+    background-color: #4b3a2f;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#Copyright p {
+    color: whitesmoke;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
+/*DROPDOWN*/
+/*DROPDOWN*/
+/*DROPDOWN*/
+/*DROPDOWN*/
+/*DROPDOWN*/
+
+#navigation {
+    position: absolute;
+}
+
+.dropbtn {
+    background-color: #38261b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    transition: 0.5s ease;
+    padding: 0.5rem;
+    opacity: 90%;
+    top: 2rem;
+    right: 2rem;
+    z-index: 102;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    position: absolute;
+    background-color: rgb(125, 114, 109);
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.712);
+    z-index: 101;
+    position: fixed;
+    height: 100vh;
+    width: 40%;
+    font-family: 'Sansita', sans-serif;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    transform: translateX(120%);
+    transition: 1s;
+}
+
+.shadow {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    position: fixed;
+    z-index: -1;
+}
+
+.shadowSee {
+    background-color: rgba(69, 69, 69, 0.527);
+    z-index: 100;
+}
+
+.showNav {
+    transform: translateX(0%);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 0rem;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    transition: 0.25s;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f137;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: rgb(127, 61, 194);
+}
+
+.nav-icon {
+    font-size: 3rem;
+}
+
+.overlap {
+    position: absolute;
+    z-index: 100;
+}
+
+/*   CONTACT PAGE   */
+/*   CONTACT PAGE   */
+/*   CONTACT PAGE   */
+/*   CONTACT PAGE   */
+/*   CONTACT PAGE   */
+
+#contact {
+    padding: 5rem 0;
+    margin-bottom: 5rem;
+}
+
+#contact .section-heading {
+    margin-bottom: 5rem;
+}
+
+#contact .wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#contact .wrapper .left,
+#contact .wrapper .right {
+    flex: 1;
+}
+
+#contact .wrapper .left .contact-heading {
+    font-family: 'Sansita', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+#contact .wrapper .left .contact-description {
+    color: var(--secondary-gray);
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 2rem;
+}
+
+#contact .wrapper .left .info {
+    margin-bottom: 2rem;
+}
+
+#contact .wrapper .left .info ul {
+    list-style: none;
+    gap: 5rem;
+}
+
+#contact .wrapper .left .info ul li {
+    border-radius: 15px;
+    overflow: hidden;
+    gap: 5rem;
+    transition: 0.5s ease;
+    margin: 1rem;
+}
+
+#contact .wrapper .left .info ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.25rem;
+    padding: 0.75rem;
+    gap: 1rem;
+}
+
+#contact .wrapper .left .info ul li:hover {
+    background-color: var(--primary-color);
+}
+
+#contact .wrapper .left .info ul li:hover .text {
+    color: whitesmoke;
+}
+
+#contact .wrapper .left .info ul li .icon {
+    width: 25px;
+    color: var(--primary-color);
+}
+
+#contact .wrapper .left .info ul li:hover .icon {
+    color: whitesmoke;
+}
+
+#contact .left .social-media ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 1.25rem;
+    gap: 2rem;
+}
+
+#contact .left .social-media ul li a {
+    color: var(--primary-color);
+}
+
+#contact .right .form-wrapper {
+    background-color: var(--primary-color);
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 15px;
+    color: whitesmoke;
+}
+
+#contact .right .form-group {
+    margin-bottom: 1rem;
+}
+
+#contact .right .form-group label {
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    font-size: 1.25rem;
+}
+
+#contact .right .form-group .input-wrapper {
+    background-color: whitesmoke;
+    color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+#contact .right .form-group .input-wrapper .icon {
+    font-size: 1.5rem;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(217, 217, 217);
+}
+
+#contact .right .form-group .input-wrapper input {
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+#contact .right .form-group textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+}
+
+#contact .right .form-wrapper button {
+    display: inline-block;
+    width: 150px;
+    font-size: 1.75rem;
+    height: auto;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Sansita', sans-serif;
+    transition: 0.25s;
+    background-color: #e2dddd;
+}
+
+#contact .right .form-wrapper button:hover {
+    background-color: #ffffff;
+}
+
+
+/*   Making Website Responsive!!!   */
+
+/*   Making Website Responsive!!!   */
+
+/*   Making Website Responsive!!!   */
+
+/*   Making Website Responsive!!!   */
+
+/*   Making Website Responsive!!!   */
+
+/*   Making Website Responsive!!!   */
+
+/*   Making Website Responsive!!!   */
+
+/*   Making Website Responsive!!!   */
+
+/*   Making Website Responsive!!!   */
+
+
+/*   For Big Desktop   */
+
+@media only screen and (max-width: 1350px) {
+
+    #first .container .left .heading {
+        font-size: 4rem;
+    }
+
+}
+
+/*   For Desktop   */
+
+@media only screen and (max-width: 1300px) {
+
+    #page2 {
+        padding: 15rem 0 10rem 0;
+    }
+
+    #page3 {
+        padding: 5rem 0 0rem 0;
+    }
+
+    #page4 {
+        padding-top: 5rem;
+        padding-bottom: 10rem;
+    }
+
+    #page6 {
+        padding-top: 7rem;
+    }
+
+    #navigation {
+        margin-left: 85%;
+    }
+
+}
+
+
+
+/*   For Ipad   */
+
+@media only screen and (max-width: 1000px) {
+
+    #first .container .right {
+        flex: 7;
+    }
+
+    .section-heading {
+        margin-bottom: 7rem;
+        font-size: 3rem;
+    }
+
+    #page2 {
+        padding-bottom: 10rem;
+        padding-top: 0rem;
+    }
+
+    #page2 .container .all-items .item .item-description {
+        font-size: 1.25rem;
+    }
+
+    #page2 .container .all-items .item:nth-child(1) {
+        background-color: rgb(252, 210, 217);
+    }
+
+    #page2 .container .all-items .item:nth-child(2) {
+        background-color: rgb(201, 235, 247);
+    }
+
+    #page2 .container .all-items .item:nth-child(3) {
+        background-color: rgb(197, 239, 197);
+    }
+
+    #page2 .container .all-items .item .item-description {
+        font-size: 1rem;
+    }
+
+    #page2 .container .all-items .item {
+        margin: 0rem 0.5rem;
+    }
+
+    #page2 .container .section-heading {
+        font-size: 3rem;
+    }
+
+    /*   Page 3   */
+    /*   Page 3   */
+    /*   Page 3   */
+
+    #page3 {
+        padding-bottom: 0rem;
+    }
+
+    #page3 .section-heading {
+        margin-bottom: 8rem;
+        font-size: 3rem;
+    }
+
+    #page3 .container .all-items .item .page3-heading {
+        font-size: 1.75rem;
+    }
+
+    #page3 .container .all-items .item .page3-subheading {
+        font-size: 1.25rem;
+    }
+
+    #page3 .container .all-items .item .page3-description {
+        font-size: 1rem;
+    }
+
+    #page3 .all-items {
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*   Page 4   */
+    /*   Page 4   */
+    /*   Page 4   */
+
+    #page4 .container .all-items .item {
+        margin: 0.2rem;
+    }
+
+    /*   Page 5   */
+    /*   Page 5   */
+    /*   Page 5   */
+
+
+    #page5 .container .all-items {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    #last footer p {
+        font-size: 1rem;
+    }
+
+    #last footer .column-heading {
+        font-size: 1.5rem;
+    }
+
+    #navigation {
+        margin-left: 85%;
+    }
+
+}
+
+/*   For Phone   */
+
+@media only screen and (max-width: 768px) {
+
+    /*   Making Font Size Amaller When Screen is Smaller then 769px*/
+
+    html {
+        font-size: 14px;
+    }
+
+    .section-heading {
+        margin-bottom: 5rem;
+    }
+
+    #first {
+        margin-top: 0;
+        padding-top: 3rem;
+    }
+
+    /*   Making it stack in reverse order   */
+
+    #first .container {
+        flex-direction: column-reverse;
+        margin-top: 3rem;
+    }
+
+    /*   Text Center Align On Image   */
+
+    #first .container .right {
+        text-align: center;
+        flex: 1;
+        padding-bottom: 2rem;
+    }
+
+    /*   Text Center Align   */
+
+    #first .container .left {
+        text-align: center;
+        padding-right: 0;
+        flex: 1;
+        height: fit-content;
+    }
+
+    #first .container .left .buttons {
+        justify-content: center;
+    }
+
+    #first .container .left .heading {
+        margin-top: 0.5rem;
+        font-size: 3.5rem;
+        margin: 0 auto;
+    }
+
+    #first .container .left .description {
+        margin: 0 auto;
+        margin-top: 0;
+    }
+
+    /*   Image Smaller   */
+
+    #first .container .right .VerticalImage {
+        width: 100%;
+        height: 400px;
+        margin: 0;
+    }
+
+    /*   Second   Page   */
+    /*   Second   Page   */
+    /*   Second   Page   */
+
+    /*   Page 2 in columns when small screen*/
+
+    #page2 {
+        margin-top: 0rem;
+    }
+
+    #page2 .all-items {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #page2 .section-heading {
+        margin-bottom: 3rem;
+    }
+
+    #page2 .container .item {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    #page2 .container .all-items .item .icon {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    #page2 .container .all-items .item .item-description {
+        font-size: 1.25rem;
+    }
+
+    #page2 .container .all-items .item:nth-child(1) {
+        background-color: rgb(252, 210, 217);
+    }
+
+    #page2 .container .all-items .item:nth-child(2) {
+        background-color: rgb(201, 235, 247);
+    }
+
+    #page2 .container .all-items .item:nth-child(3) {
+        background-color: rgb(197, 239, 197);
+    }
+
+    #page2 .container .all-items .item {
+        margin: 0.5rem 0;
+    }
+
+    #page2 {
+        padding: 10rem 0 5rem 0;
+    }
+
+
+    /*   3rd Page   */
+    /*   3rd Page   */
+    /*   3rd Page   */
+
+
+    #page3 {
+        padding: 0rem 0 0rem 0;
+        margin-top: 5rem;
+    }
+
+    #page3 .all-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #page3 .all-items .item {
+        margin: 0.5 1;
+    }
+
+    #page3 .section-heading {
+        margin-bottom: 0;
+    }
+
+    /*   Page 4   */
+
+    #page4 {
+        padding-top: 0;
+        margin-top: 2rem;
+    }
+
+    #page4 .all-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*   Page 5   */
+    /*   Page 5   */
+    /*   Page 5   */
+
+    #page5 .container .all-items {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    #page5 .container .all-items .buttons {
+        flex-direction: column;
+    }
+
+    #page5 .container .all-items .buttons .primary,
+    #page5 .container .all-items .buttons .second {
+        text-align: center;
+        width: 100%;
+    }
+
+    #page6 .all-items .item .right {
+        flex-direction: column;
+        padding: 1rem 1rem;
+    }
+
+    #page6 .all-items .item {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 5rem;
+    }
+
+    #page6 .all-items .item:last-child {
+        margin-bottom: 0;
+    }
+
+    #page6 .all-items .item:nth-child(even) {
+        flex-direction: column;
+    }
+
+    #page6 .all-items .item:nth-child(even) .left {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #page6 .all-items .item .right {
+        width: 100%;
+        margin-left: 0;
+        width: 80%;
+        margin-top: -150px;
+    }
+
+    #page6 .all-items .item .buttons {
+        flex-direction: column;
+        margin: 0 10px;
+        gap: 0;
+        text-align: center;
+    }
+
+    #page6 .all-items .item .buttons .primary,
+    #page6 .all-items .item .buttons .second {
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    #last footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #last footer .column1,
+    #last footer .column2,
+    #last footer .column3,
+    #last footer .column4 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #last footer .column4 ul {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .dropbtn {
+        opacity: 80%;
+    }
+
+    #navigation {
+        margin-left: 80%;
+    }
+
+    #navigation .dropdown a {
+        font-size: 0.75rem;
+    }
+
+    #navigation .dropbtn .nav-icon {
+        font-size: 2rem;
+    }
+
+    #navigation .dropdown-content {
+        margin-top: 8rem;
+    }
+
+    #navigation .dropdown-content a {
+        padding: 0.5rem 0.25rem;
+    }
+
+}
